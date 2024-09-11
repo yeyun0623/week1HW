@@ -1,0 +1,15 @@
+Q2. Write your own general definitions of the meaning of "observations" and "variables" based on asking the ChatBot to explain these therms in the context of your dataset
+
+Observation is the actual value of a variable. Each observation represents a single unit of data that has been collected or measured.
+Variable is a characteristic that can be measured in the dataset. Each variable represents a different aspect or attribute of the observation.
+
+
+Q4. Explain the discrepancies between size of the dataset given by df.shape and what is reported by df.describe() with respect to the number of columns it analyzes and the values it reports in the count column
+
+- The discrepancy in the number of columns analyzed is due to df.describe() focusing only on numeric columns.
+- The discrepancy in the count values reflects the presence of missing values in the numeric columns.
+
+
+Q5. Use your ChatBot session to help understand the difference between the following and then provide your own paraphrasing summarization of that difference
+
+Attributes provide information about the object, while methods perform actions or computations and return results.
