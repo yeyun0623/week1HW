@@ -1,0 +1,32 @@
+1. Dataset Summary:
+
+- You wanted to know how to summarize the columns and rows of your dataset. I provided code to:
+  - Get the number of rows and columns (df.shape).
+  - Display column names.
+  - Check for missing data in each column (df.isna().sum()).
+
+2. Observations vs. Variables:
+
+  - Observations: Individual records or entries in the dataset (rows).
+  - Variables: Features or attributes measured in the dataset (columns).
+
+3. Summarizing Columns:
+
+  - For numerical columns: Summary statistics like count, mean, std, min, max, and quartiles.
+  - For categorical columns: Summary statistics like count, unique values, top value, and frequency.
+  - Provided code to get these summaries using df.describe() for numerical and categorical data.
+
+4. Non-Numeric Variables and Missing Values:
+
+  - Code to identify non-numeric variables using df.select_dtypes(exclude=['number']).columns.
+  - Code to check for missing values in numeric variables using df[numeric_columns].isna().sum().
+
+5. Discrepancies between df.shape and df.describe():
+
+  - df.shape provides the total number of rows and columns.
+  - df.describe() (by default) summarizes only numerical columns and shows the count of non-null values, which may be less than the total number of rows due to missing values.
+
+6. Attributes vs. Methods:
+
+  - Attributes: Properties of an object accessed without parentheses (e.g., df.shape).
+  - Methods: Functions associated with an object, called with parentheses (e.g., df.describe()).
